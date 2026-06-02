@@ -28,11 +28,40 @@
   hr { border:0; border-top:1px solid var(--border); margin:2rem 0; }
   strong { color:var(--fg); }
   footer { margin-top:3rem; color:var(--muted); font-size:.85rem; }
+  .install {
+    background:#f8fafc; border:1px solid var(--border); border-radius:12px;
+    padding:24px 28px; margin:0 0 2.5rem;
+  }
+  .install h2 { margin-top:0; }
+  .install ol { padding-left:1.2rem; margin:.5rem 0 1rem; }
+  .btn {
+    display:inline-block; background:var(--accent); color:#fff; text-decoration:none;
+    font-weight:600; padding:.7rem 1.4rem; border-radius:8px; margin-top:.25rem;
+  }
+  .btn:hover { background:#1574d6; }
+  .hint { color:var(--muted); font-size:.85rem; margin:.75rem 0 0; }
 </style>
 </head>
 <body>
 
-<h1>JobTrail Privacy Policy</h1>
+<h1>JobTrail</h1>
+<p class="updated">Private, local-first job-application tracker for LinkedIn &amp; Indeed</p>
+
+<div class="install">
+  <h2>Download the tester build</h2>
+  <a class="btn" href="https://github.com/splander-com/jobtrail-privacy/releases/download/v0.1.44/jobtrail-extension-0.1.44-chrome.zip">Download JobTrail v0.1.44 (.zip)</a>
+  <ol>
+    <li>Download and unzip the file.</li>
+    <li>Open <code>chrome://extensions</code> and turn on <strong>Developer mode</strong> (top-right).</li>
+    <li>Click <strong>Load unpacked</strong> and select the unzipped folder (the one with <code>manifest.json</code>).</li>
+    <li>Open the JobTrail side panel from the toolbar, then browse LinkedIn or Indeed.</li>
+  </ol>
+  <p class="hint">Chrome shows a "Developer mode extensions" notice on each launch — that's normal for unpacked installs.</p>
+</div>
+
+<hr>
+
+<h2 style="margin-top:0">Privacy Policy</h2>
 <p class="updated">Last updated: 2026-05-30</p>
 
 <p>JobTrail is a Chrome extension that helps you track job applications you find on LinkedIn and Indeed. This page describes exactly what data the extension handles, where it lives, and what we do (and don't do) with it.</p>
