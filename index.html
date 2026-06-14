@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JobTrail Privacy Policy</title>
-<meta name="description" content="Privacy policy for the JobTrail Chrome extension — a private, local-first job-application tracker for LinkedIn and Indeed.">
+<title>Splander Jobs Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Splander Jobs Chrome extension — a private, local-first job-application tracker for LinkedIn and Indeed.">
 <style>
   :root { --fg:#0f172a; --muted:#475569; --accent:#1985f0; --border:#e2e8f0; --bg:#ffffff; }
   * { box-sizing:border-box; }
@@ -44,53 +44,39 @@
 </head>
 <body>
 
-<h1>JobTrail</h1>
+<h1>Splander Jobs</h1>
 <p class="updated">Private, local-first job-application tracker for LinkedIn &amp; Indeed</p>
-
-<div class="install">
-  <h2>Download the tester build</h2>
-  <a class="btn" href="https://github.com/splander-com/jobtrail-privacy/releases/download/v0.1.44/jobtrail-extension-0.1.44-chrome.zip">Download JobTrail v0.1.44 (.zip)</a>
-  <ol>
-    <li>Download and unzip the file.</li>
-    <li>Open <code>chrome://extensions</code> and turn on <strong>Developer mode</strong> (top-right).</li>
-    <li>Click <strong>Load unpacked</strong> and select the unzipped folder (the one with <code>manifest.json</code>).</li>
-    <li>Open the JobTrail side panel from the toolbar, then browse LinkedIn or Indeed.</li>
-  </ol>
-  <p class="hint">Chrome shows a "Developer mode extensions" notice on each launch — that's normal for unpacked installs.</p>
-</div>
-
-<hr>
 
 <h2 style="margin-top:0">Privacy Policy</h2>
 <p class="updated">Last updated: 2026-05-30</p>
 
-<p>JobTrail is a Chrome extension that helps you track job applications you find on LinkedIn and Indeed. This page describes exactly what data the extension handles, where it lives, and what we do (and don't do) with it.</p>
+<p>Splander Jobs is a Chrome extension that helps you track job applications you find on LinkedIn and Indeed. This page describes exactly what data the extension handles, where it lives, and what we do (and don't do) with it.</p>
 
 <h2>Summary, in one paragraph</h2>
-<p>JobTrail runs entirely in your browser. Every job you track is saved to <code>chrome.storage.local</code> on your own device. The extension does not have a server-side database of your applications, and we never see or transmit your job-search data. The only personal information that ever leaves your device is your email address, <strong>and only if</strong> you choose to submit it to the Premium waitlist on the Premium tab. Read on for the details.</p>
+<p>Splander Jobs runs entirely in your browser. Every job you track is saved to <code>chrome.storage.local</code> on your own device. The extension does not have a server-side database of your applications, and we never see or transmit your job-search data. The only personal information that ever leaves your device is your email address, <strong>and only if</strong> you choose to submit it to the Premium waitlist on the Premium tab. Read on for the details.</p>
 
 <h2>What data we handle</h2>
 
 <h3>1. Job-application data (LinkedIn, Indeed)</h3>
-<p>When you use JobTrail on a LinkedIn or Indeed job page, the extension reads the page's contents — title, company, location, posting URL, salary, and a few similar fields — so it can attach a status pill to the listing and let you save it to your tracker.</p>
+<p>When you use Splander Jobs on a LinkedIn or Indeed job page, the extension reads the page's contents — title, company, location, posting URL, salary, and a few similar fields — so it can attach a status pill to the listing and let you save it to your tracker.</p>
 <ul>
   <li><strong>Where it lives:</strong> <code>chrome.storage.local</code>, a sandboxed per-extension area of your own browser profile.</li>
   <li><strong>Where it does NOT live:</strong> Nowhere else. We do not send it to our servers, to a third party, or to anyone.</li>
   <li><strong>How long:</strong> Until you uninstall the extension or clear your browser profile.</li>
-  <li><strong>How to export or delete:</strong> Settings → Your data → Export JSON backup (download a copy). Uninstalling JobTrail or clearing extension storage deletes everything.</li>
+  <li><strong>How to export or delete:</strong> Settings → Your data → Export JSON backup (download a copy). Uninstalling Splander Jobs or clearing extension storage deletes everything.</li>
 </ul>
 
 <h3>2. Premium waitlist email (only if you submit it)</h3>
-<p>The Premium tab inside the side panel includes a "Coming soon" preview and an email waitlist form. <strong>If, and only if,</strong> you type in your email and click "Join the waitlist", JobTrail sends that one email address to our Supabase project (<code>hcwnozzjsgqibhpebkhx.supabase.co</code>) so we can notify you when Premium opens for beta access.</p>
+<p>The Premium tab inside the side panel includes a "Coming soon" preview and an email waitlist form. <strong>If, and only if,</strong> you type in your email and click "Join the waitlist", Splander Jobs sends that one email address to our Supabase project (<code>hcwnozzjsgqibhpebkhx.supabase.co</code>) so we can notify you when Premium opens for beta access.</p>
 <ul>
-  <li><strong>What is sent:</strong> Your email address, the JobTrail version that submitted it, and your browser's User-Agent string. Nothing else.</li>
+  <li><strong>What is sent:</strong> Your email address, the Splander Jobs version that submitted it, and your browser's User-Agent string. Nothing else.</li>
   <li><strong>Where it lives:</strong> A <code>waitlist_signups</code> row in our Supabase database plus an unconfirmed Supabase Auth user record with the same email.</li>
   <li><strong>What we use it for:</strong> Notifying you when Premium opens for beta and (if we promote you to a beta tester) signing you in for Premium cloud sync.</li>
-  <li><strong>What we do NOT use it for:</strong> Marketing emails unrelated to JobTrail, selling to third parties, advertising, or recovery of your local tracking data (we do not store your tracking data on our servers).</li>
+  <li><strong>What we do NOT use it for:</strong> Marketing emails unrelated to Splander Jobs, selling to third parties, advertising, or recovery of your local tracking data (we do not store your tracking data on our servers).</li>
   <li><strong>How to delete:</strong> Email <a href="mailto:yoni.hazan.jobs@gmail.com">yoni.hazan.jobs@gmail.com</a> from the address you signed up with and we'll remove your waitlist row and any associated auth user.</li>
 </ul>
 
-<h3>3. JobTrail Premium account (only if you sign in)</h3>
+<h3>3. Splander Jobs Premium account (only if you sign in)</h3>
 <p>If we promote you to a Premium beta and you sign in via the (currently hidden) Premium Login screen, your job-application data is mirrored to your Supabase Auth account so it syncs across devices.</p>
 <ul>
   <li><strong>Where it lives:</strong> The same Supabase project as the waitlist.</li>
@@ -99,23 +85,23 @@
 </ul>
 
 <h3>4. Optional Gmail integration (you grant per-account)</h3>
-<p>Settings → Gmail lets you connect a Gmail account so JobTrail can detect recruiter replies and auto-advance your application status. This uses Google's read-only Gmail scope, runs entirely in your browser, and forwards nothing off-device. The processed-message id cache is stored in <code>chrome.storage.local</code>. Disconnect any time from Settings.</p>
+<p>Settings → Gmail lets you connect a Gmail account so Splander Jobs can detect recruiter replies and auto-advance your application status. This uses Google's read-only Gmail scope, runs entirely in your browser, and forwards nothing off-device. The processed-message id cache is stored in <code>chrome.storage.local</code>. Disconnect any time from Settings.</p>
 
 <h2>What we do NOT do</h2>
 <ul>
-  <li><strong>No analytics, no telemetry.</strong> JobTrail does not embed Google Analytics, Mixpanel, Segment, or any similar service. Open DevTools → Network on a fresh install and verify: aside from the Premium waitlist call (if you submit one) and the Gmail integration (if you connect one), the extension makes zero outbound calls to our infrastructure.</li>
+  <li><strong>No analytics, no telemetry.</strong> Splander Jobs does not embed Google Analytics, Mixpanel, Segment, or any similar service. Open DevTools → Network on a fresh install and verify: aside from the Premium waitlist call (if you submit one) and the Gmail integration (if you connect one), the extension makes zero outbound calls to our infrastructure.</li>
   <li><strong>No advertising.</strong> We do not sell access to your data to advertisers or recruiters.</li>
   <li><strong>No third-party trackers.</strong> We do not embed third-party scripts.</li>
-  <li><strong>No automated apply.</strong> JobTrail never submits applications, sends messages, or clicks Apply on your behalf. It is a read-only tracker.</li>
+  <li><strong>No automated apply.</strong> Splander Jobs never submits applications, sends messages, or clicks Apply on your behalf. It is a read-only tracker.</li>
 </ul>
 
 <h2>Cookies</h2>
-<p>JobTrail does not set cookies on any website. It uses <code>chrome.storage.local</code> (not cookies) for its own state.</p>
+<p>Splander Jobs does not set cookies on any website. It uses <code>chrome.storage.local</code> (not cookies) for its own state.</p>
 
 <h2>Permissions, and why we ask for them</h2>
 <ul>
   <li><code>storage</code> / <code>unlimitedStorage</code>: Save your tracked applications locally.</li>
-  <li><code>sidePanel</code>: Open the JobTrail side panel.</li>
+  <li><code>sidePanel</code>: Open the Splander Jobs side panel.</li>
   <li><code>activeTab</code>: Read the LinkedIn/Indeed page you're currently viewing.</li>
   <li><code>alarms</code>: Run the daily streak refresh and the Gmail poll on a timer.</li>
   <li><code>identity</code>: Used by the Gmail OAuth flow (you opt in) and the Premium Google sign-in flow (you opt in).</li>
@@ -126,7 +112,7 @@
 </ul>
 
 <h2>Children's privacy</h2>
-<p>JobTrail is intended for job seekers, who are typically adults. We do not knowingly collect any personal information from children under 13.</p>
+<p>Splander Jobs is intended for job seekers, who are typically adults. We do not knowingly collect any personal information from children under 13.</p>
 
 <h2>Changes to this policy</h2>
 <p>We will update this page when the data practices of the extension change. The "Last updated" date at the top reflects the most recent revision.</p>
@@ -135,7 +121,7 @@
 <p>For privacy questions or data-deletion requests, email Yoni Hazan at <a href="mailto:yoni.hazan.jobs@gmail.com">yoni.hazan.jobs@gmail.com</a>.</p>
 
 <hr>
-<footer>JobTrail is an independent tool. It is not affiliated with, endorsed by, or sponsored by LinkedIn Corporation or Indeed, Inc. All trademarks belong to their respective owners.</footer>
+<footer>Splander Jobs is an independent tool. It is not affiliated with, endorsed by, or sponsored by LinkedIn Corporation or Indeed, Inc. All trademarks belong to their respective owners.</footer>
 
 </body>
 </html>
