@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Splander Jobs Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Splander Jobs Chrome extension — a private, local-first job-application tracker for LinkedIn and Indeed.">
+<style>
+  :root { --fg:#0f172a; --muted:#475569; --accent:#1985f0; --border:#e2e8f0; --bg:#ffffff; }
+  * { box-sizing:border-box; }
+  body {
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    color:var(--fg); background:var(--bg); line-height:1.65;
+    max-width:760px; margin:0 auto; padding:48px 24px 96px;
+  }
+  h1 { font-size:2rem; line-height:1.2; margin:0 0 .25rem; }
+  h2 { font-size:1.3rem; margin:2.5rem 0 .75rem; padding-top:.5rem; }
+  h3 { font-size:1.05rem; margin:1.75rem 0 .5rem; }
+  p, li { color:var(--fg); }
+  .updated { color:var(--muted); font-size:.9rem; margin:0 0 2rem; }
+  a { color:var(--accent); }
+  code {
+    background:#f1f5f9; padding:.1em .35em; border-radius:4px;
+    font-size:.88em; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  ul { padding-left:1.25rem; }
+  li { margin:.35rem 0; }
+  hr { border:0; border-top:1px solid var(--border); margin:2rem 0; }
+  strong { color:var(--fg); }
+  footer { margin-top:3rem; color:var(--muted); font-size:.85rem; }
+  .install {
+    background:#f8fafc; border:1px solid var(--border); border-radius:12px;
+    padding:24px 28px; margin:0 0 2.5rem;
+  }
+  .install h2 { margin-top:0; }
+  .install ol { padding-left:1.2rem; margin:.5rem 0 1rem; }
+  .btn {
+    display:inline-block; background:var(--accent); color:#fff; text-decoration:none;
+    font-weight:600; padding:.7rem 1.4rem; border-radius:8px; margin-top:.25rem;
+  }
+  .btn:hover { background:#1574d6; }
+  .hint { color:var(--muted); font-size:.85rem; margin:.75rem 0 0; }
+</style>
+</head>
+<body>
+
+<h1>Splander Jobs</h1>
+<p class="updated">Private, local-first job-application tracker for LinkedIn &amp; Indeed</p>
+
+<h2 style="margin-top:0">Privacy Policy</h2>
+<p class="updated">Last updated: 2026-05-30</p>
+
+<p>Splander Jobs is a Chrome extension that helps you track job applications you find on LinkedIn and Indeed. This page describes exactly what data the extension handles, where it lives, and what we do (and don't do) with it.</p>
+
+<h2>Summary, in one paragraph</h2>
+<p>Splander Jobs runs entirely in your browser. Every job you track is saved to <code>chrome.storage.local</code> on your own device. The extension does not have a server-side database of your applications, and we never see or transmit your job-search data. The only personal information that ever leaves your device is your email address, <strong>and only if</strong> you choose to submit it to the Premium waitlist on the Premium tab. Read on for the details.</p>
+
+<h2>What data we handle</h2>
+
+<h3>1. Job-application data (LinkedIn, Indeed)</h3>
+<p>When you use Splander Jobs on a LinkedIn or Indeed job page, the extension reads the page's contents — title, company, location, posting URL, salary, and a few similar fields — so it can attach a status pill to the listing and let you save it to your tracker.</p>
+<ul>
+  <li><strong>Where it lives:</strong> <code>chrome.storage.local</code>, a sandboxed per-extension area of your own browser profile.</li>
+  <li><strong>Where it does NOT live:</strong> Nowhere else. We do not send it to our servers, to a third party, or to anyone.</li>
+  <li><strong>How long:</strong> Until you uninstall the extension or clear your browser profile.</li>
+  <li><strong>How to export or delete:</strong> Settings → Your data → Export JSON backup (download a copy). Uninstalling Splander Jobs or clearing extension storage deletes everything.</li>
+</ul>
+
+<h3>2. Premium waitlist email (only if you submit it)</h3>
+<p>The Premium tab inside the side panel includes a "Coming soon" preview and an email waitlist form. <strong>If, and only if,</strong> you type in your email and click "Join the waitlist", Splander Jobs sends that one email address to our Supabase project (<code>hcwnozzjsgqibhpebkhx.supabase.co</code>) so we can notify you when Premium opens for beta access.</p>
+<ul>
+  <li><strong>What is sent:</strong> Your email address, the Splander Jobs version that submitted it, and your browser's User-Agent string. Nothing else.</li>
+  <li><strong>Where it lives:</strong> A <code>waitlist_signups</code> row in our Supabase database plus an unconfirmed Supabase Auth user record with the same email.</li>
+  <li><strong>What we use it for:</strong> Notifying you when Premium opens for beta and (if we promote you to a beta tester) signing you in for Premium cloud sync.</li>
+  <li><strong>What we do NOT use it for:</strong> Marketing emails unrelated to Splander Jobs, selling to third parties, advertising, or recovery of your local tracking data (we do not store your tracking data on our servers).</li>
+  <li><strong>How to delete:</strong> Email <a href="mailto:yoni.hazan.jobs@gmail.com">yoni.hazan.jobs@gmail.com</a> from the address you signed up with and we'll remove your waitlist row and any associated auth user.</li>
+</ul>
+
+<h3>3. Splander Jobs Premium account (only if you sign in)</h3>
+<p>If we promote you to a Premium beta and you sign in via the (currently hidden) Premium Login screen, your job-application data is mirrored to your Supabase Auth account so it syncs across devices.</p>
+<ul>
+  <li><strong>Where it lives:</strong> The same Supabase project as the waitlist.</li>
+  <li><strong>Sign-out:</strong> Settings → Sign out clears the session.</li>
+  <li><strong>Account deletion:</strong> Email <a href="mailto:yoni.hazan.jobs@gmail.com">yoni.hazan.jobs@gmail.com</a> and we'll delete the auth user and all rows associated with it.</li>
+</ul>
+
+<h3>4. Optional Gmail integration (you grant per-account)</h3>
+<p>Settings → Gmail lets you connect a Gmail account so Splander Jobs can detect recruiter replies and auto-advance your application status. This uses Google's read-only Gmail scope, runs entirely in your browser, and forwards nothing off-device. The processed-message id cache is stored in <code>chrome.storage.local</code>. Disconnect any time from Settings.</p>
+
+<h2>What we do NOT do</h2>
+<ul>
+  <li><strong>No analytics, no telemetry.</strong> Splander Jobs does not embed Google Analytics, Mixpanel, Segment, or any similar service. Open DevTools → Network on a fresh install and verify: aside from the Premium waitlist call (if you submit one) and the Gmail integration (if you connect one), the extension makes zero outbound calls to our infrastructure.</li>
+  <li><strong>No advertising.</strong> We do not sell access to your data to advertisers or recruiters.</li>
+  <li><strong>No third-party trackers.</strong> We do not embed third-party scripts.</li>
+  <li><strong>No automated apply.</strong> Splander Jobs never submits applications, sends messages, or clicks Apply on your behalf. It is a read-only tracker.</li>
+</ul>
+
+<h2>Cookies</h2>
+<p>Splander Jobs does not set cookies on any website. It uses <code>chrome.storage.local</code> (not cookies) for its own state.</p>
+
+<h2>Permissions, and why we ask for them</h2>
+<ul>
+  <li><code>storage</code> / <code>unlimitedStorage</code>: Save your tracked applications locally.</li>
+  <li><code>sidePanel</code>: Open the Splander Jobs side panel.</li>
+  <li><code>activeTab</code>: Read the LinkedIn/Indeed page you're currently viewing.</li>
+  <li><code>alarms</code>: Run the daily streak refresh and the Gmail poll on a timer.</li>
+  <li><code>identity</code>: Used by the Gmail OAuth flow (you opt in) and the Premium Google sign-in flow (you opt in).</li>
+  <li><code>downloads</code>: Used by the "Export JSON backup" feature in Settings.</li>
+  <li>Host permissions (<code>linkedin.com</code>, <code>indeed.com</code>): Display status pills on job listings on those sites.</li>
+  <li>Host permission (<code>supabase.co</code>): Used for the Premium waitlist call (if you submit one) and Premium cloud sync (if you're a beta tester).</li>
+  <li>Host permissions (<code>gmail.googleapis.com</code>, <code>oauth2.googleapis.com</code>): Used by the optional Gmail integration (if you connect one).</li>
+</ul>
+
+<h2>Children's privacy</h2>
+<p>Splander Jobs is intended for job seekers, who are typically adults. We do not knowingly collect any personal information from children under 13.</p>
+
+<h2>Changes to this policy</h2>
+<p>We will update this page when the data practices of the extension change. The "Last updated" date at the top reflects the most recent revision.</p>
+
+<h2>Contact</h2>
+<p>For privacy questions or data-deletion requests, email Yoni Hazan at <a href="mailto:yoni.hazan.jobs@gmail.com">yoni.hazan.jobs@gmail.com</a>.</p>
+
+<hr>
+<footer>Splander Jobs is an independent tool. It is not affiliated with, endorsed by, or sponsored by LinkedIn Corporation or Indeed, Inc. All trademarks belong to their respective owners.</footer>
+
+</body>
+</html>
