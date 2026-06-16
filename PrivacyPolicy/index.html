@@ -102,14 +102,11 @@
 <ul>
   <li><code>storage</code> / <code>unlimitedStorage</code>: Save your tracked applications locally.</li>
   <li><code>sidePanel</code>: Open the Splander Jobs side panel.</li>
-  <li><code>activeTab</code>: Read the LinkedIn/Indeed page you're currently viewing.</li>
-  <li><code>alarms</code>: Run the daily streak refresh and the Gmail poll on a timer.</li>
-  <li><code>identity</code>: Used by the Gmail OAuth flow (you opt in) and the Premium Google sign-in flow (you opt in).</li>
-  <li><code>downloads</code>: Used by the "Export JSON backup" feature in Settings.</li>
-  <li>Host permissions (<code>linkedin.com</code>, <code>indeed.com</code>): Display status pills on job listings on those sites.</li>
-  <li>Host permission (<code>supabase.co</code>): Used for the Premium waitlist call (if you submit one) and Premium cloud sync (if you're a beta tester).</li>
-  <li>Host permissions (<code>gmail.googleapis.com</code>, <code>oauth2.googleapis.com</code>): Used by the optional Gmail integration (if you connect one).</li>
+  <li><code>alarms</code>: Run the daily streak refresh, and the Gmail poll (only if you connect Gmail), on a timer.</li>
+  <li><code>identity</code>: Used only by the optional Gmail integration and the Premium Google sign-in flow — both opt-in.</li>
+  <li>Host permissions (<code>linkedin.com</code>, <code>indeed.com</code>): the only sites the extension runs on — to read the listing you're viewing and display status pills.</li>
 </ul>
+<p>The extension also connects over HTTPS to our Supabase backend (only if you submit the Premium waitlist or sign in as a beta tester) and to Google's Gmail APIs (only if you connect Gmail). These are standard <code>fetch</code> calls and are <strong>not</strong> declared as host permissions, so they never appear on the install consent screen. The "Export JSON backup" in Settings uses an in-page download and needs no <code>downloads</code> permission.</p>
 
 <h2>Children's privacy</h2>
 <p>Splander Jobs is intended for job seekers, who are typically adults. We do not knowingly collect any personal information from children under 13.</p>
