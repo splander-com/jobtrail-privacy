@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Splander Jobs Privacy Policy</title>
-<meta name="description" content="Privacy policy for the Splander Jobs Chrome extension — a private, local-first job-application tracker for LinkedIn and Indeed.">
+<meta name="description" content="Privacy policy for the Splander Jobs Chrome extension, your job search co-pilot: a private, local-first job-application tracker.">
 <style>
   :root { --fg:#0f172a; --muted:#475569; --accent:#1985f0; --border:#e2e8f0; --bg:#ffffff; }
   * { box-sizing:border-box; }
@@ -45,80 +45,238 @@
 <body>
 
 <h1>Splander Jobs</h1>
-<p class="updated">Private, local-first job-application tracker for LinkedIn &amp; Indeed</p>
+<p class="updated">Your job search co-pilot</p>
 
 <h2 style="margin-top:0">Privacy Policy</h2>
-<p class="updated">Last updated: 2026-05-30</p>
+<p class="updated">Last updated: 2026-10-11</p>
 
-<p>Splander Jobs is a Chrome extension that helps you track job applications you find on LinkedIn and Indeed. This page describes exactly what data the extension handles, where it lives, and what we do (and don't do) with it.</p>
-
+<p>Splander Jobs is a Chrome extension that helps you track job applications you find
+on LinkedIn, Indeed, Glassdoor, AllJobs, JobNet, JobFox and Jobify, and fill in application forms. This page describes exactly what data the extension
+handles, where it lives, and what we do (and don&#39;t do) with it.</p>
 <h2>Summary, in one paragraph</h2>
-<p>Splander Jobs runs entirely in your browser. Every job you track is saved to <code>chrome.storage.local</code> on your own device. The extension does not have a server-side database of your applications, and we never see or transmit your job-search data. The only personal information that ever leaves your device is your email address, <strong>and only if</strong> you choose to submit it to the Premium waitlist on the Premium tab. Read on for the details.</p>
-
+<p>Splander Jobs runs entirely in your browser. Every job you track is saved to
+<code>chrome.storage.local</code> on your own device. The extension does not have a
+server-side database of your applications, and we never see or transmit your
+job-search data. The only personal information that ever leaves your device
+is your email address, <strong>and only if</strong> you choose to submit it to the
+Premium waitlist on the Premium tab or to be notified about our new jobs
+website. Everything else that can leave your device does so only after you
+turn it on: signing in to sync across devices (section 3), the AI features
+(section 8) and CV open tracking (section 9). The extension also sends an anonymous,
+opt-out usage heartbeat (a random id + coarse counts, no personal data) so we
+can count active users — see section 5 — and, only when you explicitly submit
+the in-app feedback form or tap a rating, your message plus those same coarse,
+non-personal details — see section 6. Read on for the details.</p>
 <h2>What data we handle</h2>
-
-<h3>1. Job-application data (LinkedIn, Indeed)</h3>
-<p>When you use Splander Jobs on a LinkedIn or Indeed job page, the extension reads the page's contents — title, company, location, posting URL, salary, and a few similar fields — so it can attach a status pill to the listing and let you save it to your tracker.</p>
+<h3>1. Job-application data (job sites)</h3>
+<p>When you use Splander Jobs on a job page on LinkedIn, Indeed, Glassdoor, AllJobs, JobNet, JobFox or Jobify, the extension reads
+the page&#39;s contents — title, company, location, posting URL, salary, and a
+few similar fields — so it can attach a status pill to the listing and let
+you save it to your tracker.</p>
 <ul>
-  <li><strong>Where it lives:</strong> <code>chrome.storage.local</code>, a sandboxed per-extension area of your own browser profile.</li>
-  <li><strong>Where it does NOT live:</strong> Nowhere else. We do not send it to our servers, to a third party, or to anyone.</li>
-  <li><strong>How long:</strong> Until you uninstall the extension or clear your browser profile.</li>
-  <li><strong>How to export or delete:</strong> Settings → Your data → Export JSON backup (download a copy). Uninstalling Splander Jobs or clearing extension storage deletes everything.</li>
+<li><strong>Where it lives:</strong> <code>chrome.storage.local</code>, a sandboxed per-extension area
+of your own browser profile.</li>
+<li><strong>Where it does NOT live:</strong> Nowhere else, unless you sign in and keep
+cloud sync on (section 3). We never send it to a third party.</li>
+<li><strong>How long:</strong> Until you uninstall the extension or clear your browser
+profile.</li>
+<li><strong>How to export or delete:</strong> Settings → Your data → Export JSON backup
+(download a copy). Uninstalling Splander Jobs or clearing extension storage
+deletes everything.</li>
 </ul>
-
 <h3>2. Premium waitlist email (only if you submit it)</h3>
-<p>The Premium tab inside the side panel includes a "Coming soon" preview and an email waitlist form. <strong>If, and only if,</strong> you type in your email and click "Join the waitlist", Splander Jobs sends that one email address to our Supabase project (<code>hcwnozzjsgqibhpebkhx.supabase.co</code>) so we can notify you when Premium opens for beta access.</p>
+<p>The Premium tab inside the side panel includes a &quot;Coming soon&quot; preview and
+an email waitlist form. <strong>If, and only if,</strong> you type in your email and click
+&quot;Join the waitlist&quot;, Splander Jobs sends that one email address to our Supabase
+project (<code>hcwnozzjsgqibhpebkhx.supabase.co</code>) so we can notify you when
+Premium opens for beta access.</p>
 <ul>
-  <li><strong>What is sent:</strong> Your email address, the Splander Jobs version that submitted it, and your browser's User-Agent string. Nothing else.</li>
-  <li><strong>Where it lives:</strong> A <code>waitlist_signups</code> row in our Supabase database plus an unconfirmed Supabase Auth user record with the same email.</li>
-  <li><strong>What we use it for:</strong> Notifying you when Premium opens for beta and (if we promote you to a beta tester) signing you in for Premium cloud sync.</li>
-  <li><strong>What we do NOT use it for:</strong> Marketing emails unrelated to Splander Jobs, selling to third parties, advertising, or recovery of your local tracking data (we do not store your tracking data on our servers).</li>
-  <li><strong>How to delete:</strong> Email <a href="mailto:yoni.hazan.jobs@gmail.com">yoni.hazan.jobs@gmail.com</a> from the address you signed up with and we'll remove your waitlist row and any associated auth user.</li>
+<li><strong>What is sent:</strong> Your email address, the Splander Jobs version that submitted
+it, and your browser&#39;s User-Agent string. Nothing else.</li>
+<li><strong>Where it lives:</strong> A <code>waitlist_signups</code> row in our Supabase database plus
+an unconfirmed Supabase Auth user record with the same email.</li>
+<li><strong>What we use it for:</strong> Notifying you when Premium opens for beta and (if
+we promote you to a beta tester) signing you in for Premium cloud sync.</li>
+<li><strong>What we do NOT use it for:</strong> Marketing emails unrelated to Splander Jobs,
+selling to third parties, advertising, or recovery of your local
+tracking data (we do not store your tracking data on our servers).</li>
+<li><strong>How to delete:</strong> Email <code>dev@splander.com</code> from the address you
+signed up with and we&#39;ll remove your waitlist row and any associated
+auth user.</li>
 </ul>
-
-<h3>3. Splander Jobs Premium account (only if you sign in)</h3>
-<p>If we promote you to a Premium beta and you sign in via the (currently hidden) Premium Login screen, your job-application data is mirrored to your Supabase Auth account so it syncs across devices.</p>
+<h3>3. Splander Jobs account and cloud sync (only if you sign in)</h3>
+<p>Signing in is optional. You can log in with Google or with an email and
+password from the onboarding screen or the Premium tab. When you sign in,
+cloud sync is turned on by default so your tracker follows you across devices.
+You can turn it off any time in Settings, and your choice is remembered.</p>
 <ul>
-  <li><strong>Where it lives:</strong> The same Supabase project as the waitlist.</li>
-  <li><strong>Sign-out:</strong> Settings → Sign out clears the session.</li>
-  <li><strong>Account deletion:</strong> Email <a href="mailto:yoni.hazan.jobs@gmail.com">yoni.hazan.jobs@gmail.com</a> and we'll delete the auth user and all rows associated with it.</li>
+<li><strong>What syncs while cloud sync is on:</strong> the jobs you track (with their status
+history and notes), your ignore list, job leads you saved from job pages, your
+contacts and outreach log, your CVs (text and the files you uploaded), and
+your settings, including the profile and saved answers autofill uses.</li>
+<li><strong>What never syncs:</strong> anything from Gmail (section 4) and the API key you
+enter for your own AI provider (section 8). Both stay on your device.</li>
+<li><strong>Where it lives:</strong> our Supabase project, where every row belongs to your
+account and no other user can read it.</li>
+<li><strong>Sign-out:</strong> Settings → Sign out clears the session on this device.</li>
+<li><strong>Account deletion:</strong> Email <code>dev@splander.com</code> and we&#39;ll delete the auth
+user and all rows associated with it.</li>
 </ul>
-
 <h3>4. Optional Gmail integration (you grant per-account)</h3>
-<p>Settings → Gmail lets you connect a Gmail account so Splander Jobs can detect recruiter replies and auto-advance your application status. This uses Google's read-only Gmail scope, runs entirely in your browser, and forwards nothing off-device. The processed-message id cache is stored in <code>chrome.storage.local</code>. Disconnect any time from Settings.</p>
-
+<p>Settings → Gmail lets you connect a Gmail account so Splander Jobs can detect
+recruiter replies and auto-advance your application status. This uses
+Google&#39;s read-only Gmail scope (<code>gmail.readonly</code>).</p>
+<ul>
+<li><strong>Where your email is processed:</strong> entirely in your browser. Emails are read
+and matched to your applications on your device.</li>
+<li><strong>What stays on your device:</strong> all email content — subjects, senders,
+message text, message ids, the list of emails already read, and job leads
+found in job-alert emails. It is stored in <code>chrome.storage.local</code> and is
+never uploaded to Splander&#39;s servers, and never sent to an AI model.</li>
+<li><strong>What can leave your device:</strong> only if you turn on cloud sync, the
+<em>result</em> syncs — an application&#39;s company, job title and status. No email
+content is part of it.</li>
+<li><strong>Disconnect:</strong> any time, from Settings → Gmail.</li>
+</ul>
+<p>The Chrome Web Store build of Splander Jobs is <strong>read-only</strong> with respect to your
+Gmail — it never writes anything to your mailbox. (A separate full build,
+which is not distributed on the Chrome Web Store, additionally offers an
+optional &quot;status labels&quot; feature that, after a second explicit opt-in, adds
+its own status labels to the emails it already classifies and can archive
+already-filed mail out of the Inbox; even then it only changes label
+membership and never sends, deletes, or edits email content.)</p>
+<h3>5. Anonymous usage analytics (on by default, you can opt out)</h3>
+<p>To understand how many people use Splander Jobs and which broad features get
+used, the extension sends a once-a-day anonymous &quot;heartbeat&quot; to our Supabase
+project. Turn it off any time in <strong>Settings → About → &quot;Share anonymous usage
+data&quot;</strong>; when off, the extension sends no telemetry at all.</p>
+<ul>
+<li><strong>What is sent:</strong> A random install identifier (generated on first run — not
+derived from you or your device), the app version, your browser UI language,
+your operating system, your plan tier (free/beta/premium), and three coarse
+flags: whether cloud sync is on, whether Gmail is connected, and a <em>bucketed</em>
+range for how many jobs you&#39;ve saved (e.g. &quot;10–49&quot;). If you are signed in, the
+heartbeat is associated with your account so we can measure sign-up conversion.</li>
+<li><strong>What is NOT sent:</strong> No email address, no job / company / CV / message
+content, no URLs, no page contents — ever. The server additionally discards
+anything outside the short list above.</li>
+<li><strong>Where it lives:</strong> A <code>telemetry_events</code> row in our Supabase project. It is
+never sold or shared with a third party, and no third-party analytics SDK is
+embedded.</li>
+</ul>
+<h3>6. Feedback you submit (only when you send it)</h3>
+<p>The <strong>Settings → Feedback &amp; Support</strong> page — and the occasional in-app &quot;was this
+helpful?&quot; prompt — let you send a feature idea, a bug report, or a rating. A
+feedback message reaches our Supabase project <strong>only when you click Send or tap
+a rating</strong>; nothing is sent just for opening the page.</p>
+<ul>
+<li><strong>What is sent:</strong> Your message text (only what you type), the random install
+identifier from section 5, and the same coarse, non-personal details the
+heartbeat sends — app version, operating system, UI language, and a coarse
+label for the job site you&#39;re on (e.g. &quot;linkedin&quot;). A bug report shows you
+exactly these details before you send. If you are signed in, it is associated
+with your account.</li>
+<li><strong>What is NOT sent:</strong> No job / company / CV / email content, no URLs, no page
+contents, and no diagnostic logs — ever. The server additionally discards
+anything outside the short list above.</li>
+<li><strong>The one exception</strong> is the &quot;new jobs website&quot; card: if you choose to enter
+your email there to be notified, that email is stored (tagged separately from
+the Premium waitlist). You never have to enter it to use the rest of feedback.</li>
+<li><strong>Where it lives:</strong> A <code>feedback</code> row in our Supabase project. It is never sold
+or shared with a third party.</li>
+<li><strong>How to delete:</strong> Email <code>dev@splander.com</code>.</li>
+</ul>
+<h3>7. Application-form autofill (you turn it on)</h3>
+<p>When you turn on autofill and open an application form, on LinkedIn Easy Apply
+or a supported applicant-tracking system such as Greenhouse, Lever, Workable,
+Comeet or Workday, Splander Jobs reads the form&#39;s fields so it can fill them.</p>
+<ul>
+<li><strong>What it fills in:</strong> your own details from Settings → Profile &amp; links, your
+saved answers, and the CV you chose, all stored on your device (and synced
+only as described in section 3).</li>
+<li><strong>Where that data goes:</strong> only into the form on the employer&#39;s page, exactly
+as if you typed it. It reaches the employer only when the form is submitted.</li>
+<li><strong>Who submits:</strong> by default, you. Splander Jobs fills the form and waits for
+you to review it and press the form&#39;s own Submit. If you choose Auto mode in
+Settings, it presses Submit for you, but only when every required question is
+answered. It never invents an answer to a question you haven&#39;t answered
+before, and it never ticks a consent box for you.</li>
+</ul>
+<h3>8. AI features (only if you turn them on)</h3>
+<p>The free CV match runs entirely on your device. The AI features (AI CV match,
+resume tailoring, profile score and drafted messages) send the CV and job text
+they need to an AI provider:</p>
+<ul>
+<li><strong>With your own API key:</strong> your browser sends the request directly to the
+provider you choose (Google Gemini, OpenAI or Anthropic), under that
+provider&#39;s terms. The key is stored only on your device and never synced.</li>
+<li><strong>With Premium:</strong> the request goes through our server to Google Gemini. We
+do not store the CV or job text.</li>
+<li><strong>Never sent:</strong> email content from Gmail.</li>
+</ul>
+<h3>9. CV open tracking (only if you turn it on, signed in)</h3>
+<p>CV open tracking tells you whether someone opened the CV you sent. When it is
+on, the copy of your CV you attach is marked: a Word file gets a tiny image
+that loads from our server when the file is opened, and the links in a PDF go
+through our server first.</p>
+<ul>
+<li><strong>What we record on an open or click:</strong> the time, whether it looks automated
+(an applicant-tracking system or link preview), and a shortened one-way hash
+of the viewer&#39;s IP address and browser. We never store the IP address
+itself, and the hash can&#39;t be used to follow a viewer across links.</li>
+<li><strong>Who sees it:</strong> only you, on the job it belongs to.</li>
+<li><strong>Turn off:</strong> Settings → Profile &amp; links → CV open tracking.</li>
+</ul>
 <h2>What we do NOT do</h2>
 <ul>
-  <li><strong>No analytics, no telemetry.</strong> Splander Jobs does not embed Google Analytics, Mixpanel, Segment, or any similar service. Open DevTools → Network on a fresh install and verify: aside from the Premium waitlist call (if you submit one) and the Gmail integration (if you connect one), the extension makes zero outbound calls to our infrastructure.</li>
-  <li><strong>No advertising.</strong> We do not sell access to your data to advertisers or recruiters.</li>
-  <li><strong>No third-party trackers.</strong> We do not embed third-party scripts.</li>
-  <li><strong>No automated apply.</strong> Splander Jobs never submits applications, sends messages, or clicks Apply on your behalf. It is a read-only tracker.</li>
+<li><strong>No third-party analytics SDKs.</strong> Splander Jobs does not embed Google
+Analytics, Mixpanel, Segment, or any similar third-party tracker. The only
+usage data we collect is the first-party anonymous heartbeat described in
+section 5 above, which you can turn off in Settings → About.</li>
+<li><strong>No advertising.</strong> We do not sell access to your data to advertisers or
+recruiters.</li>
+<li><strong>No third-party trackers.</strong> We do not embed third-party scripts.</li>
+<li><strong>No sending on your behalf.</strong> Splander Jobs never sends emails or messages
+for you, and it submits an application form only if you turned on Auto mode
+(section 7). The Chrome Web Store build is a strictly read-only Gmail client.</li>
 </ul>
-
 <h2>Cookies</h2>
-<p>Splander Jobs does not set cookies on any website. It uses <code>chrome.storage.local</code> (not cookies) for its own state.</p>
-
+<p>Splander Jobs does not set cookies on any website. It uses
+<code>chrome.storage.local</code> (not cookies) for its own state.</p>
 <h2>Permissions, and why we ask for them</h2>
 <ul>
-  <li><code>storage</code> / <code>unlimitedStorage</code>: Save your tracked applications locally.</li>
-  <li><code>sidePanel</code>: Open the Splander Jobs side panel.</li>
-  <li><code>alarms</code>: Run the daily streak refresh, and the Gmail poll (only if you connect Gmail), on a timer.</li>
-  <li><code>identity</code>: Used only by the optional Gmail integration and the Premium Google sign-in flow — both opt-in.</li>
-  <li>Host permissions (<code>linkedin.com</code>, <code>indeed.com</code>): the only sites the extension runs on — to read the listing you're viewing and display status pills.</li>
+<li><code>storage</code> / <code>unlimitedStorage</code>: Save your tracked applications locally.</li>
+<li><code>sidePanel</code>: Open the Splander Jobs side panel.</li>
+<li><code>alarms</code>: Run the daily streak refresh and the Gmail poll on a timer.</li>
+<li><code>identity</code>: Used by the Gmail OAuth flow (you opt in) and the Premium
+Google sign-in flow (you opt in).</li>
+<li>Host permissions for the job sites (<code>linkedin.com</code>, <code>indeed.com</code>,
+<code>glassdoor.com</code>, <code>alljobs.co.il</code>, <code>jobnet.co.il</code>, <code>jobs.scalefox.ai</code>,
+<code>jobify360.co.il</code>): Display status badges on job listings and save the jobs
+you choose.</li>
+<li>Host permissions for applicant-tracking systems (such as <code>greenhouse.io</code>,
+<code>lever.co</code>, <code>workable.com</code>, <code>comeet.co</code>, <code>myworkdayjobs.com</code>): Fill in
+application forms when you use autofill (section 7).</li>
 </ul>
-<p>The extension also connects over HTTPS to our Supabase backend (only if you submit the Premium waitlist or sign in as a beta tester) and to Google's Gmail APIs (only if you connect Gmail). These are standard <code>fetch</code> calls and are <strong>not</strong> declared as host permissions, so they never appear on the install consent screen. The "Export JSON backup" in Settings uses an in-page download and needs no <code>downloads</code> permission.</p>
-
-<h2>Children's privacy</h2>
-<p>Splander Jobs is intended for job seekers, who are typically adults. We do not knowingly collect any personal information from children under 13.</p>
-
+<p>We request no host permission for our own server or for Google&#39;s APIs: the
+waitlist, sign-in, sync and the Gmail integration use ordinary web requests
+that need no extra permission.</p>
+<p>(The &quot;Export JSON backup&quot; feature in Settings saves a file using your
+browser&#39;s normal download, so it needs no extra permission. Likewise, opening
+our jobs website, the Chrome Web Store review page, or the post-uninstall
+survey just opens a normal browser tab and needs no extra permission.)</p>
+<h2>Children&#39;s privacy</h2>
+<p>Splander Jobs is intended for job seekers, who are typically adults. We do not
+knowingly collect any personal information from children under 13.</p>
 <h2>Changes to this policy</h2>
-<p>We will update this page when the data practices of the extension change. The "Last updated" date at the top reflects the most recent revision.</p>
-
+<p>We will update this page when the data practices of the extension change.
+The &quot;Last updated&quot; date at the top reflects the most recent revision.</p>
 <h2>Contact</h2>
-<p>For privacy questions or data-deletion requests, email Yoni Hazan at <a href="mailto:yoni.hazan.jobs@gmail.com">yoni.hazan.jobs@gmail.com</a>.</p>
+<p>For privacy questions or data-deletion requests, email the Splander Jobs team at
+<code>dev@splander.com</code>.</p>
 
 <hr>
-<footer>Splander Jobs is an independent tool. It is not affiliated with, endorsed by, or sponsored by LinkedIn Corporation or Indeed, Inc. All trademarks belong to their respective owners.</footer>
+<footer>Splander Jobs is an independent tool. It is not affiliated with, endorsed by or sponsored by LinkedIn, Indeed, Glassdoor, AllJobs, JobNet, JobFox, Jobify or any applicant-tracking system named on this page. All trademarks belong to their respective owners.</footer>
 
 </body>
 </html>
